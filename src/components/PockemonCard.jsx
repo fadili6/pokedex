@@ -1,8 +1,7 @@
-import React from "react";
+import { React } from "react";
 
-const PokemonCard = () => {
+function PokemonCard({pokemon}) {
   // Récupération des données du premier Pokémon du tableau
-  const pokemon = pokemonList[0];
 
   return (
     <div className="pokemon-card">
@@ -14,9 +13,9 @@ const PokemonCard = () => {
         <p>???</p>
       )}
     </div>
-  );
-};
-const pokemonList = [
+  ); 
+}
+const pokemon = [
   {
     name: "bulbasaur",
     imgSrc:
